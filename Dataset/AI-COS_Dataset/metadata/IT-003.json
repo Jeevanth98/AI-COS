@@ -1,0 +1,40 @@
+{
+    "document_id": "IT-003",
+    "title": "BYOD Policy",
+    "department": "Information Technology",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Permission",
+            "action": "Use Personal Device",
+            "condition": "Authorized Organizational Work",
+            "limit": "Subject to IT security requirements"
+        },
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Protect Organizational Data",
+            "condition": "Using Personal Device",
+            "limit": "Follow IT Security Policy"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Personal Device",
+        "Organizational Data",
+        "Remote Work",
+        "IT Security"
+    ],
+    "depends_on": [
+        "IT-001",
+        "IT-002"
+    ],
+    "affected_documents": [
+        "IT-001"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

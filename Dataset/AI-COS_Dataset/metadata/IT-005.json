@@ -1,0 +1,42 @@
+{
+    "document_id": "IT-005",
+    "title": "Incident Response Policy",
+    "department": "Information Technology",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Report Security Incident",
+            "condition": "Suspected Security Incident",
+            "limit": "Immediately"
+        },
+        {
+            "actor": "IT Security Team",
+            "type": "Obligation",
+            "action": "Investigate Security Incident",
+            "condition": "Reported Incident",
+            "limit": "According to incident severity"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Security Incident",
+        "Data Breach",
+        "IT Security Team",
+        "Incident Response",
+        "Data Protection"
+    ],
+    "depends_on": [
+        "IT-001",
+        "IT-004"
+    ],
+    "affected_documents": [
+        "IT-004",
+        "IT-006"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

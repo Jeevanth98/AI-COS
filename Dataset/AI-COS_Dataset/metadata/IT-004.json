@@ -1,0 +1,42 @@
+{
+    "document_id": "IT-004",
+    "title": "Data Protection Policy",
+    "department": "Information Technology",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Protect Organizational Data",
+            "condition": "Accessing or Processing Company Data",
+            "limit": "Prevent unauthorized access or disclosure"
+        },
+        {
+            "actor": "Employee",
+            "type": "Prohibition",
+            "action": "Store Confidential Data on Unauthorized Devices",
+            "condition": "Without IT Approval",
+            "limit": "Not permitted"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Organizational Data",
+        "Confidential Data",
+        "Personal Device",
+        "Remote Work",
+        "IT Department"
+    ],
+    "depends_on": [
+        "IT-001",
+        "IT-003"
+    ],
+    "affected_documents": [
+        "IT-005",
+        "IT-006"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

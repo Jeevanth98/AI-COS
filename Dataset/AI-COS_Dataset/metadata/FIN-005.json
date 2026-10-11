@@ -1,0 +1,44 @@
+{
+    "document_id": "FIN-005",
+    "title": "Travel Expense Policy",
+    "department": "Finance",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Permission",
+            "action": "Claim Travel Expense",
+            "condition": "Authorized Business Travel",
+            "limit": "Within approved limits"
+        },
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Submit Travel Claim",
+            "condition": "After Business Travel",
+            "limit": "Within 30 days"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Manager",
+        "Travel",
+        "Travel Expense",
+        "Reimbursement",
+        "Finance"
+    ],
+    "depends_on": [
+        "FIN-001",
+        "FIN-002",
+        "FIN-003",
+        "FIN-004"
+    ],
+    "affected_documents": [
+        "FIN-001",
+        "FIN-002"
+    ],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

@@ -1,0 +1,32 @@
+{
+    "document_id": "HR-006",
+    "title": "Payroll Policy",
+    "department": "Human Resources",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Payroll Department",
+            "type": "Obligation",
+            "action": "Process Salary",
+            "condition": "Monthly Payroll Cycle",
+            "limit": "Based on approved attendance and leave records"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Payroll",
+        "Salary",
+        "Attendance",
+        "Leave",
+        "Human Resources"
+    ],
+    "depends_on": [
+        "HR-002",
+        "HR-004"
+    ],
+    "affected_documents": [],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

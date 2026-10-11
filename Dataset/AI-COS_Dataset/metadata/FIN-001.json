@@ -1,0 +1,38 @@
+{
+    "document_id": "FIN-001",
+    "title": "Employee Expense Policy",
+    "department": "Finance",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Permission",
+            "action": "Claim Business Expense",
+            "condition": "Business Purpose",
+            "limit": "Within approved expense limits"
+        },
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Submit Expense Claim",
+            "condition": "After Business Expense",
+            "limit": "Within 30 days"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Expense",
+        "Reimbursement",
+        "Manager",
+        "Finance"
+    ],
+    "depends_on": [],
+    "affected_documents": [
+        "FIN-002",
+        "FIN-003"
+    ],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

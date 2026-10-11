@@ -1,0 +1,289 @@
+{
+  "dataset_root": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset",
+  "sipa_results": [
+    {
+      "scenario_id": "SIPA-001",
+      "changed_document": "HR-001",
+      "impacted_documents": [
+        "HR-002",
+        "HR-003",
+        "IT-001",
+        "HR-005",
+        "IT-003",
+        "IT-002",
+        "HR-004",
+        "IT-004"
+      ],
+      "reasons": {
+        "HR-002": [
+          "Direct relationship: AFFECTS from HR-001",
+          "Connected via HR-001 using AFFECTS",
+          "Connected via HR-003 using REFERENCES",
+          "Connected via HR-005 using INFLUENCES",
+          "Connected via HR-005 using INFLUENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "HR-003": [
+          "Direct relationship: AFFECTS from HR-001",
+          "Connected via HR-001 using AFFECTS",
+          "Connected via HR-002 using REFERENCES",
+          "Connected via HR-005 using REFERENCES",
+          "Connected via HR-004 using REFERENCES"
+        ],
+        "IT-001": [
+          "Direct relationship: AFFECTS from HR-001",
+          "Connected via HR-001 using AFFECTS",
+          "Connected via IT-002 using REFERENCES",
+          "Connected via IT-003 using REFERENCES",
+          "Connected via IT-004 using REFERENCES"
+        ],
+        "HR-005": [
+          "Connected via HR-002 using INFLUENCES",
+          "Connected via HR-002 using INFLUENCES",
+          "Connected via HR-003 using REFERENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "IT-003": [
+          "Connected via IT-001 using REFERENCES",
+          "Connected via IT-002 using INFLUENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "IT-002": [
+          "Connected via IT-001 using REFERENCES",
+          "Connected via IT-003 using INFLUENCES"
+        ],
+        "HR-004": [
+          "Connected via HR-003 using REFERENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "IT-004": [
+          "Connected via IT-001 using REFERENCES"
+        ]
+      }
+    },
+    {
+      "scenario_id": "SIPA-002",
+      "changed_document": "IT-002",
+      "impacted_documents": [
+        "IT-006",
+        "IT-001",
+        "IT-003",
+        "IT-004",
+        "IT-005",
+        "HR-001"
+      ],
+      "reasons": {
+        "IT-006": [
+          "Direct relationship: CONTROLS from IT-002",
+          "Connected via IT-002 using CONTROLS",
+          "Connected via IT-004 using REFERENCES",
+          "Connected via IT-004 using CONTROLS",
+          "Connected via IT-005 using INFLUENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "IT-001": [
+          "Direct relationship: REFERENCES from IT-002",
+          "Connected via IT-002 using REFERENCES",
+          "Connected via IT-003 using REFERENCES",
+          "Connected via HR-001 using AFFECTS",
+          "Connected via IT-004 using REFERENCES"
+        ],
+        "IT-003": [
+          "Direct relationship: INFLUENCES from IT-002",
+          "Connected via IT-002 using INFLUENCES",
+          "Connected via IT-001 using REFERENCES"
+        ],
+        "IT-004": [
+          "Connected via IT-001 using REFERENCES",
+          "Connected via IT-006 using REFERENCES",
+          "Connected via IT-006 using CONTROLS",
+          "Connected via IT-005 using REFERENCES"
+        ],
+        "IT-005": [
+          "Connected via IT-006 using INFLUENCES",
+          "Connected via IT-004 using REFERENCES"
+        ],
+        "HR-001": [
+          "Connected via IT-001 using AFFECTS"
+        ]
+      }
+    },
+    {
+      "scenario_id": "SIPA-003",
+      "changed_document": "FIN-003",
+      "impacted_documents": [
+        "FIN-005",
+        "FIN-004",
+        "FIN-001",
+        "FIN-002"
+      ],
+      "reasons": {
+        "FIN-005": [
+          "Direct relationship: CONTROLS from FIN-003",
+          "Connected via FIN-003 using CONTROLS",
+          "Connected via FIN-001 using REFERENCES",
+          "Connected via FIN-002 using REFERENCES",
+          "Connected via FIN-004 using INFLUENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "FIN-004": [
+          "Direct relationship: CONTROLS from FIN-003",
+          "Connected via FIN-003 using CONTROLS",
+          "Connected via FIN-001 using REFERENCES",
+          "Connected via FIN-005 using INFLUENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "FIN-001": [
+          "Direct relationship: REFERENCES from FIN-003",
+          "Connected via FIN-003 using REFERENCES",
+          "Connected via FIN-002 using REFERENCES",
+          "Connected via FIN-004 using REFERENCES",
+          "Connected via FIN-005 using REFERENCES",
+          "Rule similarity suggests the same policy concept is relevant"
+        ],
+        "FIN-002": [
+          "Direct relationship: CONTROLS from FIN-003",
+          "Connected via FIN-003 using CONTROLS",
+          "Connected via FIN-001 using REFERENCES",
+          "Connected via FIN-005 using REFERENCES"
+        ]
+      }
+    }
+  ],
+  "ascd_results": [
+    {
+      "conflict_id": "ASCD-001",
+      "documents": [
+        "HR-001",
+        "HR-CONFLICT-001"
+      ],
+      "conflict_detected": true,
+      "reason": "Policy types differ (permission vs obligation) while actor and action overlap.",
+      "recommended_actions": [
+        "Confirm the exact policy authority and precedence for both documents.",
+        "Verify whether an exception or scope condition resolves the contradiction.",
+        "Document the required implementation change for affected stakeholders."
+      ]
+    },
+    {
+      "conflict_id": "ASCD-002",
+      "documents": [
+        "HR-001",
+        "HR-CONFLICT-002"
+      ],
+      "conflict_detected": false,
+      "reason": "No direct contradiction identified",
+      "recommended_actions": [
+        "Confirm the exact policy authority and precedence for both documents.",
+        "Verify whether an exception or scope condition resolves the contradiction.",
+        "Document the required implementation change for affected stakeholders."
+      ]
+    },
+    {
+      "conflict_id": "ASCD-003",
+      "documents": [
+        "FIN-003",
+        "FIN-CONFLICT-003"
+      ],
+      "conflict_detected": true,
+      "reason": "Threshold or temporal conditions create a semantic conflict under the same actor-action scope.",
+      "recommended_actions": [
+        "Confirm the exact policy authority and precedence for both documents.",
+        "Verify whether an exception or scope condition resolves the contradiction.",
+        "Document the required implementation change for affected stakeholders."
+      ]
+    }
+  ],
+  "sipa_evaluation": {
+    "mean_precision": 0.667,
+    "mean_recall": 1.0,
+    "mean_f1": 0.778,
+    "scenario_results": [
+      {
+        "scenario_id": "SIPA-001",
+        "expected": [
+          "HR-002",
+          "HR-003",
+          "HR-005",
+          "IT-001"
+        ],
+        "predicted": [
+          "HR-002",
+          "HR-003",
+          "HR-004",
+          "HR-005",
+          "IT-001",
+          "IT-002",
+          "IT-003",
+          "IT-004"
+        ],
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "matches_expected": false
+      },
+      {
+        "scenario_id": "SIPA-002",
+        "expected": [
+          "IT-001",
+          "IT-003",
+          "IT-006"
+        ],
+        "predicted": [
+          "HR-001",
+          "IT-001",
+          "IT-003",
+          "IT-004",
+          "IT-005",
+          "IT-006"
+        ],
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "matches_expected": false
+      },
+      {
+        "scenario_id": "SIPA-003",
+        "expected": [
+          "FIN-001",
+          "FIN-002",
+          "FIN-004",
+          "FIN-005"
+        ],
+        "predicted": [
+          "FIN-001",
+          "FIN-002",
+          "FIN-004",
+          "FIN-005"
+        ],
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches_expected": true
+      }
+    ]
+  },
+  "ascd_evaluation": {
+    "accuracy": 1.0,
+    "results": [
+      {
+        "conflict_id": "ASCD-001",
+        "expected_conflict": true,
+        "predicted_conflict": true,
+        "matches_expected": true
+      },
+      {
+        "conflict_id": "ASCD-002",
+        "expected_conflict": false,
+        "predicted_conflict": false,
+        "matches_expected": true
+      },
+      {
+        "conflict_id": "ASCD-003",
+        "expected_conflict": true,
+        "predicted_conflict": true,
+        "matches_expected": true
+      }
+    ]
+  }
+}

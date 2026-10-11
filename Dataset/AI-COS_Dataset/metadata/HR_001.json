@@ -1,0 +1,31 @@
+{
+    "document_id": "HR-001",
+    "title": "Remote Work Policy",
+    "department": "Human Resources",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Permission",
+            "action": "Remote Work",
+            "condition": "Manager Approval",
+            "limit": "3 days per week"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Manager",
+        "Remote Work",
+        "Human Resources"
+    ],
+    "depends_on": [],
+    "affected_documents": [
+        "HR-002",
+        "HR-003",
+        "IT-001"
+    ],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

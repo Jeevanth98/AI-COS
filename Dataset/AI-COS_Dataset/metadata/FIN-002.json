@@ -1,0 +1,33 @@
+{
+    "document_id": "FIN-002",
+    "title": "Reimbursement Policy",
+    "department": "Finance",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Finance Department",
+            "type": "Obligation",
+            "action": "Process Approved Reimbursement",
+            "condition": "Valid Approved Claim",
+            "limit": "According to reimbursement rules"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Expense",
+        "Reimbursement",
+        "Finance",
+        "Manager"
+    ],
+    "depends_on": [
+        "FIN-001",
+        "FIN-003"
+    ],
+    "affected_documents": [
+        "FIN-001"
+    ],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

@@ -1,0 +1,39 @@
+{
+    "document_id": "FIN-003",
+    "title": "Financial Approval Authority Policy",
+    "department": "Finance",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Manager",
+            "type": "Permission",
+            "action": "Approve Expense",
+            "condition": "Expense Amount",
+            "limit": "Up to INR 50000"
+        },
+        {
+            "actor": "Finance Director",
+            "type": "Permission",
+            "action": "Approve Expense",
+            "condition": "Expense Amount",
+            "limit": "Up to INR 200000"
+        }
+    ],
+    "entities": [
+        "Manager",
+        "Finance Director",
+        "Expense",
+        "Approval",
+        "Finance"
+    ],
+    "depends_on": [
+        "FIN-001"
+    ],
+    "affected_documents": [
+        "FIN-002"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

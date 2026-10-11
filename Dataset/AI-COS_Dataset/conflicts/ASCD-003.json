@@ -1,0 +1,30 @@
+{
+    "conflict_id": "ASCD-003",
+    "document_a": "FIN-003",
+    "document_b": "FIN-CONFLICT-003",
+    "rule_a": {
+        "actor": "Manager",
+        "type": "Permission",
+        "action": "Approve Expense",
+        "condition": "Expense Amount",
+        "limit": "Up to INR 50000"
+    },
+    "rule_b": {
+        "actor": "Manager",
+        "type": "Permission",
+        "action": "Approve Expense",
+        "condition": "Expense Amount",
+        "limit": "Up to INR 25000"
+    },
+    "dimensions": {
+        "actor_match": true,
+        "action_overlap": true,
+        "temporal_overlap": true,
+        "scope_overlap": true,
+        "exception_present": false,
+        "authority_override": false
+    },
+    "expected_conflict": true,
+    "conflict_type": "Threshold Conflict",
+    "severity": "High"
+}

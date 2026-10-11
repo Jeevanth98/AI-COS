@@ -1,0 +1,35 @@
+{
+    "document_id": "HR-005",
+    "title": "Working Hours Policy",
+    "department": "Human Resources",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Work During Scheduled Hours",
+            "condition": "Assigned Working Days",
+            "limit": "9:00 AM to 6:00 PM"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Working Hours",
+        "Attendance",
+        "Remote Work",
+        "Manager"
+    ],
+    "depends_on": [
+        "HR-001",
+        "HR-002",
+        "HR-003"
+    ],
+    "affected_documents": [
+        "HR-002",
+        "HR-003"
+    ],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

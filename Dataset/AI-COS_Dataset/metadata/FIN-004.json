@@ -1,0 +1,41 @@
+{
+    "document_id": "FIN-004",
+    "title": "Procurement Policy",
+    "department": "Finance",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Obtain Procurement Approval",
+            "condition": "Organizational Purchase",
+            "limit": "Before purchase"
+        },
+        {
+            "actor": "Manager",
+            "type": "Permission",
+            "action": "Approve Purchase",
+            "condition": "Purchase Amount",
+            "limit": "Up to INR 50000"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Manager",
+        "Purchase",
+        "Procurement",
+        "Finance",
+        "Approval"
+    ],
+    "depends_on": [
+        "FIN-001",
+        "FIN-003"
+    ],
+    "affected_documents": [
+        "FIN-005"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

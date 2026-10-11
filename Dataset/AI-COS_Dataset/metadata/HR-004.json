@@ -1,0 +1,42 @@
+{
+    "document_id": "HR-004",
+    "title": "Leave Policy",
+    "department": "Human Resources",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Permission",
+            "action": "Request Leave",
+            "condition": "According to Leave Rules",
+            "limit": "Subject to available leave balance"
+        },
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Submit Leave Request",
+            "condition": "Planned Leave",
+            "limit": "At least 7 days before leave"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Manager",
+        "Leave",
+        "Leave Balance",
+        "Human Resources",
+        "Payroll"
+    ],
+    "depends_on": [
+        "HR-002",
+        "HR-003"
+    ],
+    "affected_documents": [
+        "HR-003",
+        "HR-006"
+    ],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

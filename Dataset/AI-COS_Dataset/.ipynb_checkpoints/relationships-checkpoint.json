@@ -1,0 +1,137 @@
+[
+    {
+        "source": "HR-001",
+        "target": "HR-002",
+        "relationship": "AFFECTS"
+    },
+    {
+        "source": "HR-001",
+        "target": "HR-003",
+        "relationship": "AFFECTS"
+    },
+    {
+        "source": "HR-001",
+        "target": "IT-001",
+        "relationship": "AFFECTS"
+    },
+    {
+        "source": "HR-002",
+        "target": "HR-003",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "HR-002",
+        "target": "HR-005",
+        "relationship": "INFLUENCES"
+    },
+    {
+        "source": "HR-003",
+        "target": "HR-004",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "HR-003",
+        "target": "HR-005",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "HR-004",
+        "target": "HR-006",
+        "relationship": "AFFECTS"
+    },
+    {
+        "source": "HR-005",
+        "target": "HR-002",
+        "relationship": "INFLUENCES"
+    },
+    {
+        "source": "IT-001",
+        "target": "IT-002",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "IT-001",
+        "target": "IT-003",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "IT-002",
+        "target": "IT-003",
+        "relationship": "INFLUENCES"
+    },
+    {
+        "source": "FIN-001",
+        "target": "FIN-002",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "FIN-001",
+        "target": "FIN-003",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "FIN-003",
+        "target": "FIN-002",
+        "relationship": "CONTROLS"
+    },
+    {
+        "source": "IT-001",
+        "target": "IT-004",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "IT-004",
+        "target": "IT-005",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "IT-004",
+        "target": "IT-006",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "IT-005",
+        "target": "IT-006",
+        "relationship": "INFLUENCES"
+    },
+    {
+        "source": "IT-002",
+        "target": "IT-006",
+        "relationship": "CONTROLS"
+    },
+    {
+        "source": "IT-006",
+        "target": "IT-004",
+        "relationship": "CONTROLS"
+    },
+    {
+        "source": "FIN-001",
+        "target": "FIN-004",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "FIN-003",
+        "target": "FIN-004",
+        "relationship": "CONTROLS"
+    },
+    {
+        "source": "FIN-004",
+        "target": "FIN-005",
+        "relationship": "INFLUENCES"
+    },
+    {
+        "source": "FIN-002",
+        "target": "FIN-005",
+        "relationship": "REFERENCES"
+    },
+    {
+        "source": "FIN-003",
+        "target": "FIN-005",
+        "relationship": "CONTROLS"
+    },
+    {
+        "source": "FIN-001",
+        "target": "FIN-005",
+        "relationship": "REFERENCES"
+    }
+]

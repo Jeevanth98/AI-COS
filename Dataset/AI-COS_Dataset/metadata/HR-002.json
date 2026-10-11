@@ -1,0 +1,30 @@
+{
+    "document_id": "HR-002",
+    "title": "Attendance Policy",
+    "department": "Human Resources",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Maintain Attendance",
+            "condition": "Working Days",
+            "limit": "Required attendance according to approved work arrangement"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Attendance",
+        "Working Days",
+        "Remote Work"
+    ],
+    "depends_on": [
+        "HR-001",
+        "HR-003"
+    ],
+    "affected_documents": [],
+    "conflicts_with": [],
+    "severity": "Medium"
+}

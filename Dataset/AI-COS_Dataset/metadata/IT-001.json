@@ -1,0 +1,34 @@
+{
+    "document_id": "IT-001",
+    "title": "IT Security Policy",
+    "department": "Information Technology",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Protect Company Information",
+            "condition": "Using Organizational Systems",
+            "limit": "Follow all security requirements"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Remote Work",
+        "Company Information",
+        "Password",
+        "BYOD",
+        "IT Department"
+    ],
+    "depends_on": [
+        "HR-001"
+    ],
+    "affected_documents": [
+        "IT-002",
+        "IT-003"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

@@ -1,0 +1,30 @@
+{
+    "conflict_id": "ASCD-002",
+    "document_a": "HR-001",
+    "document_b": "HR-CONFLICT-002",
+    "rule_a": {
+        "actor": "Employee",
+        "type": "Permission",
+        "action": "Remote Work",
+        "condition": "Eligible Employee",
+        "temporal_scope": "Up to 3 days per week"
+    },
+    "rule_b": {
+        "actor": "Employee",
+        "type": "Obligation",
+        "action": "Work From Office",
+        "condition": "Friday",
+        "temporal_scope": "Friday"
+    },
+    "dimensions": {
+        "actor_match": true,
+        "action_overlap": true,
+        "temporal_overlap": false,
+        "scope_overlap": true,
+        "exception_present": false,
+        "authority_override": false
+    },
+    "expected_conflict": false,
+    "conflict_type": "Compatible Temporal Rules",
+    "severity": "Low"
+}

@@ -1,0 +1,532 @@
+{
+  "dataset_validation_report": {
+    "errors": [],
+    "warnings": [],
+    "summary": {
+      "total_document_files": 17,
+      "total_metadata_records": 17,
+      "total_relationships": 27,
+      "total_scenarios": 3,
+      "total_conflict_cases": 3,
+      "total_documents_found": 17,
+      "missing_metadata": [],
+      "invalid_relationship_endpoints": [],
+      "duplicate_metadata_ids": [],
+      "document_ids": [
+        "FIN-001",
+        "FIN-002",
+        "FIN-003",
+        "FIN-004",
+        "FIN-005",
+        "HR-001",
+        "HR-002",
+        "HR-003",
+        "HR-004",
+        "HR-005",
+        "HR-006",
+        "IT-001",
+        "IT-002",
+        "IT-003",
+        "IT-004",
+        "IT-005",
+        "IT-006"
+      ],
+      "valid_document_ids": [
+        "FIN-001",
+        "FIN-002",
+        "FIN-003",
+        "FIN-004",
+        "FIN-005",
+        "HR-001",
+        "HR-002",
+        "HR-003",
+        "HR-004",
+        "HR-005",
+        "HR-006",
+        "IT-001",
+        "IT-002",
+        "IT-003",
+        "IT-004",
+        "IT-005",
+        "IT-006"
+      ]
+    },
+    "document_files": [
+      "FIN-001_Employee_Expense_Policy.docx",
+      "FIN-002_Reimbursement_Policy.docx",
+      "FIN-003_Financial_Approval_Authority_Policy.docx",
+      "FIN-004_Procurement_Policy.docx",
+      "FIN-005_Travel_Expense_Policy.docx",
+      "HR-002_Attendance_Policy.docx",
+      "HR-003_Employee_Handbook.docx",
+      "HR-004_Leave_Policy.docx",
+      "HR-005_Working_Hours_Policy.docx",
+      "HR-006_Payroll_Policy.docx",
+      "HR_001_Remote_Work_Policy.docx",
+      "IT-001_IT_Security_Policy.docx",
+      "IT-002_Password_Policy.docx",
+      "IT-003_BYOD_Policy.docx",
+      "IT-004_Data_Protection_Policy.docx",
+      "IT-005_Incident_Response_Policy.docx",
+      "IT-006_Access_Control_Policy.docx"
+    ],
+    "metadata_files": [
+      "FIN-001.json",
+      "FIN-002.json",
+      "FIN-003.json",
+      "FIN-004.json",
+      "FIN-005.json",
+      "HR-002.json",
+      "HR-003.json",
+      "HR-004.json",
+      "HR-005.json",
+      "HR-006.json",
+      "HR_001.json",
+      "IT-001.json",
+      "IT-002.json",
+      "IT-003.json",
+      "IT-004.json",
+      "IT-005.json",
+      "IT-006.json"
+    ],
+    "relationships": [
+      {
+        "source": "HR-001",
+        "target": "HR-002",
+        "relationship": "AFFECTS"
+      },
+      {
+        "source": "HR-001",
+        "target": "HR-003",
+        "relationship": "AFFECTS"
+      },
+      {
+        "source": "HR-001",
+        "target": "IT-001",
+        "relationship": "AFFECTS"
+      },
+      {
+        "source": "HR-002",
+        "target": "HR-003",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "HR-002",
+        "target": "HR-005",
+        "relationship": "INFLUENCES"
+      },
+      {
+        "source": "HR-003",
+        "target": "HR-004",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "HR-003",
+        "target": "HR-005",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "HR-004",
+        "target": "HR-006",
+        "relationship": "AFFECTS"
+      },
+      {
+        "source": "HR-005",
+        "target": "HR-002",
+        "relationship": "INFLUENCES"
+      },
+      {
+        "source": "IT-001",
+        "target": "IT-002",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "IT-001",
+        "target": "IT-003",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "IT-002",
+        "target": "IT-003",
+        "relationship": "INFLUENCES"
+      },
+      {
+        "source": "FIN-001",
+        "target": "FIN-002",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "FIN-001",
+        "target": "FIN-003",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "FIN-003",
+        "target": "FIN-002",
+        "relationship": "CONTROLS"
+      },
+      {
+        "source": "IT-001",
+        "target": "IT-004",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "IT-004",
+        "target": "IT-005",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "IT-004",
+        "target": "IT-006",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "IT-005",
+        "target": "IT-006",
+        "relationship": "INFLUENCES"
+      },
+      {
+        "source": "IT-002",
+        "target": "IT-006",
+        "relationship": "CONTROLS"
+      },
+      {
+        "source": "IT-006",
+        "target": "IT-004",
+        "relationship": "CONTROLS"
+      },
+      {
+        "source": "FIN-001",
+        "target": "FIN-004",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "FIN-003",
+        "target": "FIN-004",
+        "relationship": "CONTROLS"
+      },
+      {
+        "source": "FIN-004",
+        "target": "FIN-005",
+        "relationship": "INFLUENCES"
+      },
+      {
+        "source": "FIN-002",
+        "target": "FIN-005",
+        "relationship": "REFERENCES"
+      },
+      {
+        "source": "FIN-003",
+        "target": "FIN-005",
+        "relationship": "CONTROLS"
+      },
+      {
+        "source": "FIN-001",
+        "target": "FIN-005",
+        "relationship": "REFERENCES"
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario_id": "SIPA-001",
+        "changed_document": "HR-001",
+        "change_type": "Policy Limit Change",
+        "old_rule": {
+          "actor": "Employee",
+          "type": "Permission",
+          "action": "Remote Work",
+          "limit": "3 days per week"
+        },
+        "new_rule": {
+          "actor": "Employee",
+          "type": "Permission",
+          "action": "Remote Work",
+          "limit": "2 days per week"
+        },
+        "expected_affected_documents": [
+          "HR-002",
+          "HR-003",
+          "HR-005",
+          "IT-001"
+        ],
+        "expected_unaffected_documents": [
+          "HR-004",
+          "HR-006",
+          "IT-002",
+          "IT-003",
+          "IT-004",
+          "IT-005",
+          "IT-006",
+          "FIN-001",
+          "FIN-002",
+          "FIN-003",
+          "FIN-004",
+          "FIN-005"
+        ],
+        "impact_severity": "High"
+      },
+      {
+        "scenario_id": "SIPA-002",
+        "changed_document": "IT-002",
+        "change_type": "Security Requirement Change",
+        "old_rule": {
+          "actor": "Employee",
+          "type": "Obligation",
+          "action": "Create Strong Password",
+          "limit": "Minimum 12 characters"
+        },
+        "new_rule": {
+          "actor": "Employee",
+          "type": "Obligation",
+          "action": "Create Strong Password",
+          "limit": "Minimum 16 characters"
+        },
+        "expected_affected_documents": [
+          "IT-001",
+          "IT-003",
+          "IT-006"
+        ],
+        "expected_unaffected_documents": [
+          "HR-001",
+          "HR-002",
+          "HR-003",
+          "HR-004",
+          "HR-005",
+          "HR-006",
+          "IT-004",
+          "IT-005",
+          "FIN-001",
+          "FIN-002",
+          "FIN-003",
+          "FIN-004",
+          "FIN-005"
+        ],
+        "impact_severity": "High"
+      },
+      {
+        "scenario_id": "SIPA-003",
+        "changed_document": "FIN-003",
+        "change_type": "Authority Threshold Change",
+        "old_rule": {
+          "actor": "Manager",
+          "type": "Permission",
+          "action": "Approve Expense",
+          "limit": "Up to INR 50000"
+        },
+        "new_rule": {
+          "actor": "Manager",
+          "type": "Permission",
+          "action": "Approve Expense",
+          "limit": "Up to INR 100000"
+        },
+        "expected_affected_documents": [
+          "FIN-001",
+          "FIN-002",
+          "FIN-004",
+          "FIN-005"
+        ],
+        "expected_unaffected_documents": [
+          "HR-001",
+          "HR-002",
+          "HR-003",
+          "HR-004",
+          "HR-005",
+          "HR-006",
+          "IT-001",
+          "IT-002",
+          "IT-003",
+          "IT-004",
+          "IT-005",
+          "IT-006"
+        ],
+        "impact_severity": "High"
+      }
+    ],
+    "conflicts": [
+      {
+        "conflict_id": "ASCD-001",
+        "document_a": "HR-001",
+        "document_b": "HR-CONFLICT-001",
+        "rule_a": {
+          "actor": "Employee",
+          "type": "Permission",
+          "action": "Remote Work",
+          "condition": "Eligible Employee",
+          "temporal_scope": "Weekdays"
+        },
+        "rule_b": {
+          "actor": "Employee",
+          "type": "Obligation",
+          "action": "Work From Office",
+          "condition": "Weekdays",
+          "temporal_scope": "Weekdays"
+        },
+        "dimensions": {
+          "actor_match": true,
+          "action_overlap": true,
+          "temporal_overlap": true,
+          "scope_overlap": true,
+          "exception_present": false,
+          "authority_override": false
+        },
+        "expected_conflict": true,
+        "conflict_type": "Permission vs Obligation",
+        "severity": "High"
+      },
+      {
+        "conflict_id": "ASCD-002",
+        "document_a": "HR-001",
+        "document_b": "HR-CONFLICT-002",
+        "rule_a": {
+          "actor": "Employee",
+          "type": "Permission",
+          "action": "Remote Work",
+          "condition": "Eligible Employee",
+          "temporal_scope": "Up to 3 days per week"
+        },
+        "rule_b": {
+          "actor": "Employee",
+          "type": "Obligation",
+          "action": "Work From Office",
+          "condition": "Friday",
+          "temporal_scope": "Friday"
+        },
+        "dimensions": {
+          "actor_match": true,
+          "action_overlap": true,
+          "temporal_overlap": false,
+          "scope_overlap": true,
+          "exception_present": false,
+          "authority_override": false
+        },
+        "expected_conflict": false,
+        "conflict_type": "Compatible Temporal Rules",
+        "severity": "Low"
+      },
+      {
+        "conflict_id": "ASCD-003",
+        "document_a": "FIN-003",
+        "document_b": "FIN-CONFLICT-003",
+        "rule_a": {
+          "actor": "Manager",
+          "type": "Permission",
+          "action": "Approve Expense",
+          "condition": "Expense Amount",
+          "limit": "Up to INR 50000"
+        },
+        "rule_b": {
+          "actor": "Manager",
+          "type": "Permission",
+          "action": "Approve Expense",
+          "condition": "Expense Amount",
+          "limit": "Up to INR 25000"
+        },
+        "dimensions": {
+          "actor_match": true,
+          "action_overlap": true,
+          "temporal_overlap": true,
+          "scope_overlap": true,
+          "exception_present": false,
+          "authority_override": false
+        },
+        "expected_conflict": true,
+        "conflict_type": "Threshold Conflict",
+        "severity": "High"
+      }
+    ]
+  },
+  "summary": {
+    "dataset_errors": 0,
+    "dataset_warnings": 0,
+    "documents": 17,
+    "metadata": 17,
+    "relationships": 27
+  },
+  "generated_artifacts": {
+    "extracted_text": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\extracted_text.json",
+    "document_registry": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\document_registry.json",
+    "structured_rules": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\structured_rules.json",
+    "document_embeddings": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\document_embeddings.npy",
+    "embedding_index": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\embedding_index.json",
+    "knowledge_graph": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\knowledge_graph.json",
+    "graph_visualization": "E:\\SEM-07\\NLP\\Proj\\Dataset\\AI-COS_Dataset\\processed\\knowledge_graph.png"
+  },
+  "embeddings": {
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "document_vectors": [
+      {
+        "document_id": "FIN-001",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "FIN-002",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "FIN-003",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "FIN-004",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "FIN-005",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "HR-002",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "HR-003",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "HR-004",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "HR-005",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "HR-006",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "HR-001",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "IT-001",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "IT-002",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "IT-003",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "IT-004",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "IT-005",
+        "vector_dim": 384
+      },
+      {
+        "document_id": "IT-006",
+        "vector_dim": 384
+      }
+    ],
+    "warnings": [
+      "Embeddings generated using a free Hugging Face sentence-transformer model via direct transformers loading due blocked sklearn DLLs in this environment."
+    ],
+    "embedding_count": 17,
+    "embedding_dim": 384
+  }
+}

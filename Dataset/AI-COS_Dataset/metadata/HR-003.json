@@ -1,0 +1,36 @@
+{
+    "document_id": "HR-003",
+    "title": "Employee Handbook",
+    "department": "Human Resources",
+    "document_type": "Handbook",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Obligation",
+            "action": "Follow Organizational Policies",
+            "condition": "During Employment",
+            "limit": "All applicable policies"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "Manager",
+        "Human Resources",
+        "Remote Work",
+        "Attendance",
+        "Leave",
+        "Working Hours"
+    ],
+    "depends_on": [
+        "HR-001",
+        "HR-002"
+    ],
+    "affected_documents": [
+        "HR-004",
+        "HR-005"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}

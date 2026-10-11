@@ -1,0 +1,45 @@
+{
+    "document_id": "IT-006",
+    "title": "Access Control Policy",
+    "department": "Information Technology",
+    "document_type": "Policy",
+    "version": "1.0",
+    "effective_date": "2026-01-01",
+    "rules": [
+        {
+            "actor": "Employee",
+            "type": "Permission",
+            "action": "Access Organizational Systems",
+            "condition": "Authorized Role",
+            "limit": "Only required resources"
+        },
+        {
+            "actor": "IT Administrator",
+            "type": "Obligation",
+            "action": "Review User Access",
+            "condition": "Periodic Review",
+            "limit": "Every 90 days"
+        }
+    ],
+    "entities": [
+        "Employee",
+        "IT Administrator",
+        "System Access",
+        "Organizational System",
+        "Password",
+        "Data Protection"
+    ],
+    "depends_on": [
+        "IT-001",
+        "IT-002",
+        "IT-004",
+        "IT-005"
+    ],
+    "affected_documents": [
+        "IT-001",
+        "IT-004",
+        "IT-005"
+    ],
+    "conflicts_with": [],
+    "severity": "High"
+}
